@@ -1,99 +1,38 @@
-.container {
-  display: grid;
-  grid-template-areas:
-		'. . . . d d'
-		'c c c c c c'
-    'a a a b b b'
-    'r r p p s s';
-  font-family: cursive;
-}
-
-.container > div {
+.App {
   text-align: center;
 }
 
-.Rock, .Paper, .Scissors {
-  margin-top: 75px;
-  height: 100px;
-  width: 100px;
-  border-width: 0;
-  background-color: lightskyblue;
-  font-family: cursive;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.Rock:hover, .Paper:hover, .Scissors:hover {
-  background-color: lightslategray;
-  font-size: large;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-#choiceJ1, #choiceJ2 {
-	color: black;
-	font-size: 30px;
-  border-radius: 50%;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.j1 {
-	grid-area: a;
-  margin-top: 50px;
+.App-link {
+  color: #61dafb;
 }
 
-.j2 {
-	grid-area: b;
-  margin-top: 50px;
-}
-
-.Rock {
-	grid-area: r;
-  width: auto;
-}
-
-.Paper {
-	grid-area: p;
-  width: auto;
-}
-
-.Scissors {
-	grid-area: s;
-  width: auto;
-}
-
-.point {
-	grid-area: d;
-	font-size: 20px;
-}
-
-.choice {
-	grid-area: c;
-	font-size: 35px;
-}
-
-.restart {
-  font-family: cursive;
-  background-color: white;
-  border-width: 0;
-  width: 150px;
-}
-
-.restart:hover {
-  color: red;
-  border-width: 1px;
-  border-color: red;
-  font-size: large;
-}
-
-.botJ1Button {
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  text-align: center;
-  bottom:0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  border-width: 0;
-}
-
-.botJ1Button:hover {
-  font-size: larger;
-  color: red;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
